@@ -41,7 +41,7 @@ def main():
     cliente = Cliente("Mariana Castro", "123.456.789-00", "(88) 99999-9999", "Cedro-ce")
     conta_corrente = ContaCorrente(cliente, saldo=1000, limite=5000)
     conta_poupanca = ContaPoupanca(cliente, saldo=5000, limite=500)
-    gerente = Gerente("Carlos Souza", "12.345.345/1234.00", "Atendimento")
+    gerente = Gerente("Carlos Souza", "GR12345", "Atendimento")
     
     while True:
         print("\nEscolha uma opção:")
