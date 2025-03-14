@@ -1,8 +1,10 @@
 class Gerente:
-    def __init__(self, nome, cnpj, setor):
+    def __init__(self, nome, cpf, telefone, email, salario):
         self.nome = nome
-        self.cnpj = cnpj
-        self.setor = setor
+        self.__cpf = cpf
+        self.__telefone = telefone
+        self.__email = email
+        self.__salario = salario
     
     def mostrar_dados(self):
-        return f"Gerente: {self.nome}, CNPJ: {self.cnpj}, Setor: {self.setor}"
+        return f"\nGerente:\nNome: {self.nome}\nCPF: {self.__cpf}\nTelefone: {self.__telefone}\nEmail: {self.__email}\nSalário: R$ {self.__salario:.2f}\n"
