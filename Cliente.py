@@ -1,3 +1,4 @@
+import time
 
 class Cliente:
     def __init__(self, nome, cpf, telefone, endereco, email):
@@ -6,10 +7,14 @@ class Cliente:
         self.__telefone = telefone
         self.__endereco = endereco
         self.__email = email
-        
-    def mostrar_dados(self):
-        return f"\nCliente:\nNome: {self.nome}\nCPF: {self.__cpf}\nTelefone: {self.__telefone}\nEndereço: {self.__endereco}\nEmail: {self.__email}\n"
+    
+    def get_cpf(self):
+        return self.__cpf
 
+    def mostrar_dados(self):
+        return f"\n👤 Cliente:\nNome: {self.nome}\nCPF: {self.__cpf}\nTelefone: {self.__telefone}\nEndereço: {self.__endereco}\nEmail: {self.__email}\n"
+
+time.sleep(1)
 #Define uma classe chamada Cliente.
 #Define o método construtor __init__, que inicializa os atributos do objeto.
 #Atributo público nome, acessível diretamente.
